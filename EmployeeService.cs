@@ -1,7 +1,10 @@
 public class EmployeeService
 {
-    public void CreateEmployee()
-    {
-        Console.WriteLine("Employee Created");
-    }
+    public void CreateEmployee(string name)
+{
+    if(string.IsNullOrWhiteSpace(name))
+        return;
+
+    Console.WriteLine(name);
+}
 }
